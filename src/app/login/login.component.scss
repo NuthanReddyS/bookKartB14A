@@ -1,0 +1,27 @@
+.main-div mat-card {
+  padding: 0px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+  text-align: left;
+}
+.login-form {
+  padding: 20px;
+}
+.topnav-right {
+  float: left;
+}
+.register {
+  float: left;
+}
+.mat-toolbar {
+  background-color: #ff4081;
+  margin-bottom: 1em;
+  color: white;
+}
+.newuser {
+  font-size: 15px;
+}
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}

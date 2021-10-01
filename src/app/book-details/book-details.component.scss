@@ -1,0 +1,70 @@
+// .Image{
+//     width: 200px;
+//     height: 260px;
+//     padding: 15px;
+//     align-content: center;
+//     align-items: center;
+//     justify-content: center;
+//     overflow: hidden;
+//     transition: transform .5s;
+//   }
+
+//   .preview-image {
+//     max-height: 300px;
+//     max-width: 300px;
+//   }
+//   .Image:hover {
+//     transform: scale(1.5);
+//   }
+//   .Book{
+//       color: white;
+//       background-color: #ff4081;
+//       font-size: 32px;
+//   }
+
+$color-row-border: #dee2e6;
+
+.image-card {
+width: 200px;
+height: 260px;
+padding: 15px;
+align-content: center;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+transition: transform .5s;
+}
+
+.image-card :hover{
+  transform: scale(1.5);
+}
+.preview-image {
+max-height: 300px;
+max-width: 300px;
+}
+
+td{
+border-top:0;
+border-bottom:1px solid $color-row-border;
+width: 50%;
+}
+
+.image-card:hover {
+transform: scale(1.5);
+}
+.docs-example-viewer-wrapper{
+border: 0;
+box-shadow: 0 1px 1px rgb(0 0 0 / 24%), 0 0 2px rgb(0 0 0 / 12%);
+margin: 1em auto;
+border-radius: 4px;
+}
+.docs-example-viewer-title{
+  background: #ff4081;
+  margin:30px;
+}
+h2{
+  margin-bottom: 0;
+  font-size: 28px;
+  color:#fff;
+  text-align: center;
+}

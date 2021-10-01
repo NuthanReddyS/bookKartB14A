@@ -1,0 +1,40 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="35">
+    <mat-toolbar>
+      <mat-toolbar-row class="Login">
+        <p>Login Page</p>
+
+        <span class="example-spacer"> </span>
+        <div class="newuser">New User?</div>
+
+        <button mat-raised-button type="submit" class="topnav-right">
+          <span class="register" routerLink="/Register">Register</span>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" [formGroup]="loginForm">
+      <mat-form-field>
+        <input matInput placeholder="Username" formControlName="username" required />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" formControlName="password" required />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+      </mat-form-field>
+      <div fxLayoutAlign="end">
+        <button mat-raised-button type="submit" routerLink="/Login">
+          Login
+        </button>
+      </div>
+    </form>
+  </mat-card>
+</div>
